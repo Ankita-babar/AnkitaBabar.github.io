@@ -1,0 +1,199 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a192f; /* Navy Blue */
+    color: #ccd6f6; /* Light Gray */
+    transition: background-color 0.3s, color 0.3s;
+   }
+   body.dark-theme {
+    background-color: #f4f4f4; /* Light Gray */
+    color: #0a192f; /* Navy Blue */
+   }
+   .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+   }
+   /* Particles.js Container */
+   #particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+   }
+   /* Custom Cursor */
+   .cursor {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #64ffda; /* Teal */
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease;
+    z-index: 1000;
+   }
+   /* Header */
+   header {
+    background-color: rgba(10, 25, 47, 0.9); /* Semitransparent Navy Blue */
+    color: #ccd6f6; /* Light Gray */
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+   }
+   header h1 {
+    margin: 0;
+    font-size: 24px;
+   }
+   nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+   }
+   nav ul li a {
+    color: #ccd6f6; /* Light Gray */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+   }
+   nav ul li a:hover {
+    color: #64ffda; /* Teal */
+   }
+   .theme-toggle {
+    background: none;
+    border: none;
+    color: #ccd6f6; /* Light Gray */
+    cursor: pointer;
+    font-size: 20px;
+    transition: color 0.3s;
+   }
+   .theme-toggle:hover {
+    color: #64ffda; /* Teal */
+   }
+   /* Hero Section */
+   .hero {
+    background-color: rgba(10, 25, 47, 0.7); /* Semitransparent Navy Blue */
+    color: #ccd6f6; /* Light Gray */
+    padding: 150px 0;
+    text-align: center;
+    position: relative;
+   }
+   .hero h2 {
+    font-size: 48px;
+    margin: 0;
+    animation: fadeIn 2s ease-in-out;
+   }
+   .hero p {
+    font-size: 18px;
+    margin: 10px 0 20px;
+    animation: fadeIn 3s ease-in-out;
+   }
+   .btn {
+    background-color: #64ffda; /* Teal */
+    color: #0a192f; /* Navy Blue */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+   }
+   .btn:hover {
+    background-color: #52d1b2; /* Darker Teal */
+   }
+   /* Sections */
+   .section {
+    padding: 80px 0;
+    background-color: rgba(10, 25, 47, 0.8); /* Semitransparent Navy Blue */
+    margin: 20px 0;
+    border-radius: 10px;
+   }
+   .section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #64ffda; /* Teal */
+   }
+   /* Projects Grid */
+   .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,
+   1fr));
+    gap: 20px;
+   }
+   .project {
+    background-color: rgba(100, 255, 218, 0.1); /* Semitransparent Teal */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+   }
+   .project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+   }
+   .project h3 {
+    margin: 0 0 10px;
+    color: #64ffda; /* Teal */
+   }
+   /* Contact Form */
+   #contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+   }
+   #contact-form input, #contact-form textarea {
+    padding: 10px;
+    border: 1px solid #64ffda; /* Teal */
+    border-radius: 5px;
+    background-color: rgba(100, 255, 218, 0.1); /* Semitransparent Teal */
+    color: #ccd6f6; /* Light Gray */
+   }
+   #contact-form button {
+    background-color: #64ffda; /* Teal */
+    color: #0a192f; /* Navy Blue */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+   }
+   #contact-form button:hover {
+    background-color: #52d1b2; /* Darker Teal */
+   }
+   /* Footer */
+   footer {
+    background-color: rgba(10, 25, 47, 0.9); /* Semitransparent Navy Blue */
+    color: #ccd6f6; /* Light Gray */
+    text-align: center;
+    padding: 20px 0;
+   }
+   .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+   }
+   .social-links a {
+    color: #ccd6f6; /* Light Gray */
+    font-size: 20px;
+    transition: color 0.3s;
+   }
+   .social-links a:hover {
+    color: #64ffda; /* Teal */
+   }
+   /* Animations */
+   @keyframes fadeIn {
+    from {
+    opacity: 0;
+    }
+    to {
+    opacity: 1;
+    }
+   }
